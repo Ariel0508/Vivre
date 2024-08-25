@@ -1,0 +1,256 @@
+.banner-title {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+  @include media-breakpoint-up(lg) {
+    top: 50%;
+    bottom: auto;
+  }
+
+  h2 {
+    letter-spacing: 0.08em;
+  }
+}
+
+.theme-card {
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb($color:$gray-900, $alpha: 0.4);
+    transition: opacity 0.3s;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+//swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  width: 232px;
+  position: relative;
+}
+.swiper-pagination::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #6c757d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-prev:hover, .swiper-next:hover {
+  background-color: #6c757d;
+  color: #DEE2E6;
+}
+
+.swiper-button-disabled {
+  color: #dee2e6;
+  border-color: #dee2e6 !important;
+  
+  &:hover {
+     cursor: default;
+  background-color: initial !important;
+  }
+}
+
+.member-link {
+  color: #8C8984;
+  background: #E8E3DA;
+  
+  &:hover {
+    color: #000;
+  }
+}
+
+.swp-pagination {
+  align-items: center;
+  @include media-breakpoint-up(lg) {
+    align-items: stretch;
+  }
+}
+
+.watching-sm {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.read-tag {
+  background: $primary-300;
+  &:hover {
+    background: $primary-400;
+    color: $white;
+  }
+}
+
+.event {
+  max-width: 269px;
+  @include media-breakpoint-up(lg) {
+    max-width: 360px;
+  }  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 217px;
+    height: 81px;
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-1.png?raw=true");
+    display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    &::before {
+      display: block;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -50px;
+    display: block;
+    width: 160px;
+    height: 104px;
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2-sm.png?raw=true") no-repeat;
+    @include media-breakpoint-up(lg) {
+      width: 300px;
+      height: 196px;
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/bg-2.png?raw=true");
+    }
+  }
+
+}
+
+.event-title {
+  color: $accent-200;
+  @include media-breakpoint-up(lg) {
+    color: $primary-400;
+  }
+}
+
+//foodSwiper
+
+.foodSwiper {
+  @media (max-width: 768px) {
+    .swiper {
+      padding-bottom: 0;
+      margin-bottom: -8px;
+    }
+  
+    .swiper-slide {
+      margin-bottom: 48px;
+    }
+  
+    .swiper-slide:nth-child(n + 4) {
+      display: none;
+    }
+  
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+
+.life {
+  .swiper-pagination {
+    width: 232px;
+    position: relative;
+  }
+  .swiper-pagination::after {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background-color: #6c757d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .foodSwiper-prev:hover, .foodSwiper-next:hover {
+    background-color: #6c757d;
+    color: #DEE2E6;
+  }
+  
+  .foodSwiper-button-disabled {
+    color: #dee2e6;
+    border-color: #dee2e6 !important;
+    
+    &:hover {
+       cursor: default;
+    background-color: initial !important;
+    }
+  }
+}
+
+.projects {
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: start;
+  }
+}
+
+.projectsSwiper {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.theme {
+  align-items: center;
+  @include media-breakpoint-up(lg) {
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,52 @@
+<div class="container-fluid container-lg px-0 px-lg-2_5">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary-100 px-2_5 py-lg-4_2_7 border-bottom border-neutral-300">
+      <a class="navbar-brand me-4_2_5" href="index.html">
+        <h1 class="fs-0">
+            <picture>
+                <source media="(min-width: 992px)" srcset="https://storage.googleapis.com/vue-course-api.appspot.com/rubby-api/1724429430807.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=keEO7EmMjyxIVSTR9yAVFzAtSANvZhW8Ff7vXNC8SsFt99P8ATNOgzO%2BUX5FuZJSLrNyRzGb9NSAKP4gC4DIll4ZbVX%2BU29ehG8khLV4f8ffHiTW0sMRBe2hmBDIefGvbl6ArM9xLRs60kbOhg5EhQtV1UPdbzhZ14qC71OqXZTn7Pd6XQRHIJnl1AYq2Oh7CQlVeFcoO8VcUmHDsjiUxDCEl9%2BvYsdZqUVSNgj8JGt4%2BKdZs8D9a0XEhQyaWEHaj72mrmlRgkDarFLhC5zlYK2rfUb7Oo3opSP0ScEtljudCiYUnNEoi8FPl5MwXtxvRGOBOKHhhtDWmHal6EP6ng%3D%3D" />
+                <img src="https://storage.googleapis.com/vue-course-api.appspot.com/rubby-api/1724434028280.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=Rqx6DqdZbymc1q09dgGjMYozN16vEHo%2FrJedv6D7FT7yLwgWQhPSjN7%2BTQvFYvnvX949vmNKEe%2B4e6i%2BigZ5uzDhbbIsEBty8UjE8wZjlKe7t2tKwMg4OTytP89OEIeGbm4AujKIyZMqGX%2B4OIAXhZrnVPha4F5%2Be694dlVRn7ARRfABARs5gD%2Fz3BYZ3yRqI5aBwqvaZiLy50OJk6ANhtowseIt%2BZ5FknVRtPO6FTOMx5DArvTR9kWFRB3LPRtxd8Vr3fUBaQy4ENR%2BOWzZcSXPyzrR48eU8q9l%2Fw1rI91Ry8%2FGpFTxkF1JZ3MNlJSyY30tJeGN1svye5poCevu3w%3D%3D" alt="logo" />
+              </picture>
+        </h1>
+      </a>
+      <button class="navbar-toggler border-0 navbar-toggler-icon-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex justify-content-center">
+          <div class="input-group w-100 rounded-pill py-2 py-lg-2_5 px-3_5 my-4 my-lg-0">
+            <label class="input-group-text search-text bg-white border-0 p-0" for="search">搜尋文章</label>
+            <input type="text" class="form-control bg-white border-0 p-0" id="search"
+              aria-label="Amount (to the nearest dollar)">
+            <a href="#" class="input-group-text bg-white border-0 p-0 ms-1">
+              <i class="bi bi-search text-accent-200 fs-4"></i>
+            </a>
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto mb-6 mb-lg-0">
+          <li class="nav-item me-3_5  mb-4 mb-lg-0">
+            <a class="nav-link p-2_5 px-lg-3_5 fw-bold text-neutral-500" aria-current="page" href="article.html">所有文章</a>
+          </li>
+          <li class="nav-item me-3_5 mb-4 mb-lg-0">
+            <a class="nav-link p-2_5 px-lg-3_5 fw-bold text-neutral-500" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item me-3_5 mb-4_5 mb-lg-0">
+            <a class="nav-link p-2_5 px-lg-3_5 fw-bold text-neutral-500" href="#">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <button class="justify-content-center w-100 btn btn-accent-200 fs-6 fs-lg-5 px-4 py-2_5 py-lg-3" type="button">
+              登入 / 註冊
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
+      this.classList.toggle('collapsed');
+      document.querySelector('.navbar-brand').classList.toggle('hide-brand');
+    });
+  </script>

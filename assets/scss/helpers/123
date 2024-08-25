@@ -1,0 +1,34 @@
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25, //4
+  2: $spacer * .5, //8
+  2_5: $spacer * .75, //12
+  3: $spacer, //16
+  3_5: $spacer * 1.25, //20
+  4: $spacer * 1.5, //24
+  4_2_5: $spacer * 2.25, //36
+  4_2_7: $spacer * 2.375, //38
+  4_5: $spacer * 2.5, //40
+  5: $spacer * 3, //48
+  5_5: $spacer * 3.75, //60
+  6: $spacer * 5, //80
+) !default;
+
+$primary-100:   #fffdf5 !default;
+$primary-200:   #fffbe5 !default;
+$primary-300:   #e8e3da !default;
+$primary-400:   #6e6b67 !default;
+
+$accent-100:    #e0efde !default;
+$accent-200:    #569573 !default;
+$accent-300:    #406c55 !default;
+
+$neutral-100:   #f8f9fa !default;
+$neutral-200:   #dee2e6 !default;
+$neutral-300:   #adb5bd !default;
+$neutral-400:   #6c757d !default;
+$neutral-500:   #343a40 !default;
+
+
+

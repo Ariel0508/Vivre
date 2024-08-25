@@ -1,0 +1,31 @@
+.en-font {
+    font-family: "Newsreader", system-ui;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.1em;
+}
+
+ul,li {
+    list-style: none;
+    padding: 0;
+}

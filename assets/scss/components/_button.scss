@@ -1,0 +1,15 @@
+.btn {
+    letter-spacing: 0.1em;
+    display: inline-flex;
+    align-items: center;    
+    &.btn-accent-200 {
+        background-color: $accent-200;
+        border-color: $accent-200;
+        color: $white !important;
+        &:hover {
+            background-color: $accent-300;
+            border-color: $accent-300;
+            color: $white;
+        }
+    }
+}

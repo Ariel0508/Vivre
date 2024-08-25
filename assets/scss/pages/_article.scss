@@ -1,0 +1,42 @@
+.article-banner {
+    max-height: 454px;
+}
+
+.readMoreSwiper {
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-wrapper {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-direction: column;
+        }
+      }
+  
+      .swiper-slide {
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-up(lg) {
+          height: 170px;
+        }
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
+.readMore {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

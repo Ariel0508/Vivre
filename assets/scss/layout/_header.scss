@@ -1,0 +1,46 @@
+.navbar-nav {
+  @include media-breakpoint-up(md) {
+    align-items: center;
+  }
+}
+.fs-0 {
+  font-size: 0;
+}
+
+.input-group {
+  max-width: 351px;
+  border: 1px solid $neutral-200;
+  border-radius: 100px;
+  background: $white;
+}
+
+/* 使用 :focus-within 的語法控制鄰近元素 */
+.input-group-text{
+  color: $neutral-300 ;
+}
+
+.input-group:focus-within .search-text {
+  color: #212529;
+  font-weight: bold;
+}
+#search:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.navbar-toggler-icon-toggle {
+  &.collapsed {
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M5 5L25 25M25 5L5 25'/%3e%3c/svg%3e");
+    }
+  }
+  &:not(.collapsed) {
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");    }
+  }
+}
+
+.hide-brand {
+  opacity: 0;
+}
